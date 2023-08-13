@@ -5,7 +5,8 @@ import { questions } from "@/data/questions";
 // Styled components
 const BoardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-flow: column;
   gap: 10px;
   padding: 20px;
 `;
@@ -25,10 +26,10 @@ const QuestionTile = styled.div`
 
 export const Board = () => {
   return (
-    <BoardContainer>
+      <BoardContainer>
       {questions.map((question: Question) => (
         <QuestionTile key={question.id}>${question.value}</QuestionTile>
       ))}
-    </BoardContainer>
+      </BoardContainer>
   );
 };
