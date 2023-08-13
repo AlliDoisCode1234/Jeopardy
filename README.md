@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Tasks for MVP: 
+
+1 Add category headers
+2 Make Card dialog
+3 Update question list
+4 Make team incrementor for 2 teams
+5 Ensure state persists through page reload
