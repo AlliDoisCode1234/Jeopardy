@@ -26,10 +26,10 @@ const QuestionTile = styled.div`
 
 export const Board = () => {
   return (
-      <BoardContainer>
+    <BoardContainer>
       {questions.map((question: Question) => (
-        <QuestionTile key={question.id}>${question.value}</QuestionTile>
+        <QuestionTile key={question.id}>{question.value}</QuestionTile>
       ))}
-      </BoardContainer>
+    </BoardContainer>
   );
 };
