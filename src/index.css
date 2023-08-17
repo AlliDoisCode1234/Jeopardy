@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* page title */
+#title {
+  text-align: center;
+}
+
+/* dialog button css */
+.dialog-trigger {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border: 0px solid white;
+}
+
+.dialog-trigger:hover {
+  background: #0056b3;
+}
+
+.dialog-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0056b3;
+  padding: 25px;
+  color: white;
+}
+
+/* *
+* Scoreboard Styles
+* */
+
+#scoreboard {
+    display: flex;
+    gap: 10px;
+
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+/* reset button */
+#reset-button {
+    background: red;
+    color: white;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 0px 20px;
 }
